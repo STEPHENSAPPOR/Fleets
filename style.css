@@ -1,28 +1,31 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 50px 10px;
     align-items: center;
     position: fixed;
-    width: 90vw;
+    width: 95vw;
     z-index: 100;
-  }
-  
-  #nav-links {
+    background-color: #6d6a63;
+    margin right: 0;
+}
+
+#nav-links {
     display: flex;
     column-gap: 20px;
     text-transform: uppercase;
     color: white;
     font-size: 14px;
-  }
-  #hero {
-    background-image: url(./images/first\ car.jpg);
+}
+
+#hero {
+    background-image: url(./images/fleet-cars.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
-  }
-  
-  #hero-overlay {
+}
+
+#hero-overlay {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100vh;
     width: 100vw;
@@ -32,45 +35,50 @@ nav {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-  }
-  
-  header {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
+}
 
-  #about {
+#about {
     display: flex;
     justify-content: center;
     padding: 80px;
-  }
-  
-  .sub-header {
+}
+
+.sub-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #about-image {
+}
+
+#about-image {
     width: 40%;
     border-radius: 15px;
-  }
-  #about-text p {
-    font-family: 'Arial', sans-serif; /* Fallback font */
+}
+
+#about-text p {
+    font-family: 'Arial', sans-serif;
+    /* Fallback font */
     font-size: 18px;
     line-height: 1.6;
-    color: peru;
-  }
+    color: rgb(39, 20, 2);
+}
 
-  #subtext-one {
+#subtext-one {
     font-size: 90px;
-  }
-  
-  #subtext-two {
+}
+
+#subtext-two {
     font-size: 85px;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
     margin: 0;
@@ -95,11 +103,11 @@ nav {
 
 .logo {
     font-size: 1.5em;
-    color: #4CAF50;
+    color: #bfa145;
 }
 
 .buy-now {
-    background-color: #4CAF50;
+    background-color: #bfa145;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -179,10 +187,11 @@ p {
     cursor: pointer;
     font-size: 1em;
 }
+
 .cars {
     display: flex;
     justify-content: space-between;
-    background:fixed
+    background: fixed
 }
 
 body {
@@ -193,16 +202,16 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 4000px;
+    margin: 70px auto;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #bfa145;
-    font-weight: 300;
+    color: black;
+    font-weight: 100;
 }
 
 .highlight {
@@ -235,7 +244,9 @@ p {
     flex: 1 1 45%;
 }
 
-.booking-form input, .booking-form select, .booking-form button {
+.booking-form input,
+.booking-form select,
+.booking-form button {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -251,7 +262,7 @@ p {
 }
 
 .booking-form button:hover {
-    background-color: #a68f3c;
+    background-color: #444030;
 }
 
 .app-download {
@@ -263,4 +274,118 @@ p {
 
 .app-download .icon {
     height: 40px;
+}
+
+
+/* Footer section */
+
+#newsletter {
+    background-color: #131313;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter-container h2 {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+.newsletter-container h1 {
+    font-size: 2.5em;
+    margin: 10px 0 20px;
+    color: white;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #615d3f;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    margin: 10px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: white;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.contact-item p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.contact-item span {
+    display: block;
+    color: white;
+    margin-top: 5px;
+}
+
+.contact-item i img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffcc00;
 }
