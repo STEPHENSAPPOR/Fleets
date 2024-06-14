@@ -293,6 +293,34 @@ p {
     background: fixed
 }
 
+#video-sec {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+  }
+  
+  #video {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+  
+  #video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #video-overlay .sub-header span:nth-child(2) {
+    color: white;
+  }
+  
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
